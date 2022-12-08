@@ -1,13 +1,37 @@
 .wrapper {
   background-color: beige;
-  height: 30rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .login-form {
   background-color: aquamarine;
-  width: 50%;
-  height: 40rem;
+  width: 30%;
+  height: 25rem;
+}
+
+.title {
+  background-color: brown;
+  height: 3rem;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.group-input {
+  background-color: bisque;
+  height: 13rem;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.inputs{
+  background-color: blue;
+  height: 5rem;
+
+
 }
