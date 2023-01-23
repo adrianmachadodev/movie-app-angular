@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: beige;
+  background-color: white;
   height: 40rem;
   display: flex;
   flex-direction: column;
@@ -8,30 +8,103 @@
 }
 
 .login-form {
-  background-color: aquamarine;
-  width: 30%;
+  // background-color: aquamarine;
+  width: 25%;
   height: 25rem;
+  border-radius: 4px;
 }
 
 .title {
-  background-color: brown;
+  // background-color: brown;
   height: 3rem;
   font-weight: bold;
   font-size: 2em;
+  margin-top: 1rem;
 }
 
-.group-input {
-  background-color: bisque;
-  height: 13rem;
-  margin-top: 5px;
+.wrapper-inputs {
+  // background-color: aqua;
+  height: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: space-evenly;
 }
 
-.inputs{
-  background-color: blue;
-  height: 5rem;
+.wrapper-inputs .box-input {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  // background-color: crimson;
+  align-items: center;
+  position: relative;
+}
 
+.box-input input {
+  display: block;
+  // background: transparent;
+  font-size: 1.3em;
+  height: 2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  touch-action: manipulation;
+}
 
+.box-input label {
+  position: absolute;
+  top: 0;
+  color: black;
+  font-weight: 100;
+  left: 0;
+  pointer-events: none;
+  font-size: 18px;
+  transform: translateY(9px);
+  transition: all 200ms ease-in-out;
+}
+
+.box-input input:focus,
+.box-input input:valid {
+  border-bottom-color: black;
+}
+
+.box-input input:focus + label,
+.box-input input:valid ~ label {
+  color: grey;
+  font-size: 15px;
+  transform: translateY(-18px);
+}
+
+.pass {
+  // background-color: bisque;
+  height: 2rem;
+  margin-top: 5px;
+  line-height: 2rem;
+}
+
+.btn-log {
+  // background-color: darkcyan;
+  height: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 50%;
+  border: none;
+  height: 3rem;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(71, 71, 71, 0.692);
+  transition: all 1s ease-in-out;
 }
