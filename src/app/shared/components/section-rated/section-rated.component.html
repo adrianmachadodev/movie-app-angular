@@ -1,0 +1,8 @@
+<div class="wrapper-rated">
+  <div class="title-rated"><h4>Top Rated</h4></div>
+  <ul>
+    <li *ngFor="let rated of newMovieRated">
+      <app-cards-rated [dataMovieRated]="rated"></app-cards-rated>
+    </li>
+  </ul>
+</div>

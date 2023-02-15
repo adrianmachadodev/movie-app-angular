@@ -1,0 +1,10 @@
+<div class="wrapper-section">
+  <div class="title">
+    <h4>{{ title }}</h4>
+  </div>
+  <ul class="card-movie">
+    <li *ngFor="let movie of newArrayMovie">
+      <app-cards [cardMovie]="movie"></app-cards>
+    </li>
+  </ul>
+</div>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FavoritesPageComponent } from '../favorites/pages/favorites-page/favorites-page.component';
 import { HomePageComponent } from '../home/pages/home-page/home-page.component';
 import { PremierePageComponent } from '../premiere/pages/premiere-page/premiere-page.component';
 
@@ -12,6 +13,12 @@ const routes: Routes = [
   {
     path: 'Premiere',
     component: PremierePageComponent,
+    loadChildren: () =>
+      import('../premiere/premiere.module').then((m) => m.PremiereModule),
+  },
+  {
+    path: 'Favorites',
+    component: FavoritesPageComponent,
     loadChildren: () =>
       import('../premiere/premiere.module').then((m) => m.PremiereModule),
   },

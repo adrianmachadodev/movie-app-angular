@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Avatar 2",
+      "age": 2022,
+      "category": "Science Fiction",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Smile",
+      "age": 2022,
+      "category": "Horror",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Smile_%282022_film%29.jpg/220px-Smile_%282022_film%29.jpg"
+    },
+    {
+      "id": 3,
+      "name": "La maquina infernal",
+      "age": 2022,
+      "category": "Mistery",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTU2Mzc2MzMtZjgwZC00MjI2LTg3YTktZDAzZTAyZmFkYTE0XkEyXkFqcGdeQXVyMjM2OTA1OTY@._V1_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Carter",
+      "age": 2022,
+      "category": "Action",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNWEyOThlZTAtMzExMy00NDBhLTk4Y2QtMDg3OTRkNzgyNjEyXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Asesino Sin Memoria",
+      "age": 2022,
+      "category": "Suspense",
+      "cover": "https://pics.filmaffinity.com/Asesino_sin_memoria-281680996-large.jpg"
+    },
+    {
+      "id": 6,
+      "name": "El teléfono del señor Harrigan",
+      "age": 2022,
+      "category": "Horror",
+      "cover": "https://pics.filmaffinity.com/El_tel_fono_del_se_or_Harrigan-401658624-large.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Black Adam",
+      "age": 2022,
+      "category": "Action",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/a/a9/Black_Adam_%28film%29_poster.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Sin novedad en el frente",
+      "age": 2022,
+      "category": "Drama",
+      "cover": "https://pics.filmaffinity.com/Sin_novedad_en_el_frente-474477682-large.jpg"
+    },
+    {
+      "id": 9,
+      "name": "El extraño",
+      "age": 2022,
+      "category": "Drama",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZDU1MDFhOTMtNGE4NS00NjBiLTgwYTQtNTU2OGJmZjQ1ZWM1XkEyXkFqcGdeQXVyMTU2Mjg2NjE2._V1_.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Hacia la libertad",
+      "age": 2022,
+      "category": "Action",
+      "cover": "https://pics.filmaffinity.com/Hacia_la_libertad-320303056-large.jpg"
+    }
+  ]
+}

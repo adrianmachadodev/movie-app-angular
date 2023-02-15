@@ -1,0 +1,24 @@
+.wrapper-rated {
+  // background-color: cornflowerblue;
+  height: 18rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.title-rated {
+  // background-color: chocolate;
+  height: 3rem;
+  width: 100%;
+  color: white;
+}

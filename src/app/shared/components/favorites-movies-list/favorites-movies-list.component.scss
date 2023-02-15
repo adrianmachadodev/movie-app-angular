@@ -1,0 +1,24 @@
+.wrapper-fav {
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.box-favorites {
+  background-color: brown;
+  height: 7rem;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img {
+  background-color: cadetblue;
+  height: 3rem;
+  width: 3rem;
+}

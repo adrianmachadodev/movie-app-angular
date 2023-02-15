@@ -1,0 +1,16 @@
+<div class="wrapper-rated">
+  <div class="cover-rated">
+    <img
+      src="https://image.tmdb.org/t/p/w185/{{ dataMovieRated.poster_path }}"
+      alt=""
+      class="image"
+    />
+    <div class="overlay">
+      <div class="favorite">
+        <button (click)="sendDataFavorites(dataMovieRated.original_title)">
+          🖤
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

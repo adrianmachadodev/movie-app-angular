@@ -1,15 +1,16 @@
 .wrapper-side {
-  background-color: wheat;
+  background-color: #0a0a0a;
   width: 17.5rem;
   border-right: 1px solid rgba(128, 128, 128, 0.178);
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  overflow: hidden;
+  gap: 4px;
 }
 
 .title-side {
@@ -19,8 +20,17 @@
 }
 
 .panel {
-  background-color: violet;
+  background-color: rgba(51, 50, 50, 0.37);
   height: 10rem;
+  border-radius: 10px;
+}
+
+.panel .title-panel {
+  // background-color: antiquewhite;
+  width: 100%;
+  height: 2rem;
+  padding: 5px;
+  color: grey;
 }
 
 .follow-title {
@@ -31,4 +41,13 @@
 .follow {
   background-color: teal;
   min-height: 10rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
 }

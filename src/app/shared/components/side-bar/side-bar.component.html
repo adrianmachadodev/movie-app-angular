@@ -1,11 +1,36 @@
 <div class="wrapper-side">
   <div class="title-side">Movie app</div>
-  <div class="panel"></div>
+  <div class="panel">
+    <div class="title-panel">Menu</div>
+    <ul>
+      <li>
+        <i class="uil uil-home" style="color: white; padding: 2px"></i>
+        <a routerLink="Home">Home</a>
+      </li>
+      <li>
+        <i class="uil uil-video" style="color: white; padding: 2px"></i>
+        <a routerLink="Premiere">Premiere</a>
+      </li>
+      <li>
+        <i class="uil uil-heart" style="color: white; padding: 2px"></i>
+        <a href="Favorites">Favoritos</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </div>
   <hr />
   <div class="follow-title">
     <h6>Following</h6>
   </div>
-  <div class="follow"></div>
+  <div class="follow">
+    <ul>
+      <li *ngFor="let movie of arrayMovies">
+        {{ movie }}
+      </li>
+    </ul>
+  </div>
   <hr />
   <div class="log-out">Log-out</div>
 </div>

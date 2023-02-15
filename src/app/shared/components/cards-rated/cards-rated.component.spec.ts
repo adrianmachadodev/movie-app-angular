@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentSectionComponent } from './content-section.component';
+import { CardsRatedComponent } from './cards-rated.component';
 
-describe('ContentSectionComponent', () => {
-  let component: ContentSectionComponent;
-  let fixture: ComponentFixture<ContentSectionComponent>;
+describe('CardsRatedComponent', () => {
+  let component: CardsRatedComponent;
+  let fixture: ComponentFixture<CardsRatedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContentSectionComponent ]
+      declarations: [ CardsRatedComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContentSectionComponent);
+    fixture = TestBed.createComponent(CardsRatedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
