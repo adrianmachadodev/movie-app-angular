@@ -4,6 +4,6 @@ export interface MovieModel {
   release_date: string;
   original_title: string;
   original_language: string;
-  title: string;
+  title: string | null;
   backdrop_path: string;
 }

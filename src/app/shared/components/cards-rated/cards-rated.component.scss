@@ -1,17 +1,19 @@
 .wrapper-rated {
   position: relative;
-  display: flex;
-  flex-direction: row;
   height: 15rem;
   width: 13rem;
-  border-radius: 3px;
-  justify-content: space-around;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cover-rated {
-  background-color: cadetblue;
+  // background-color: cadetblue;
   height: 15rem;
   width: 12rem;
+  border-radius: 5px;
 }
 
 .overlay {
@@ -21,7 +23,7 @@
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 12rem;
   opacity: 0;
   transition: 0.5s ease;
   background-color: #008cba;
@@ -29,14 +31,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  margin: 0 auto;
+  border-radius: 5px;
+
 }
 
 .wrapper-rated:hover .overlay {
   opacity: 1;
+  border-radius: 5px;
 }
 
 .favorite {
-  background-color: blueviolet;
+  // background-color: blueviolet;
   height: 3rem;
   width: 3rem;
 }
@@ -44,4 +50,5 @@
 img {
   height: 100%;
   width: 100%;
+  border-radius:5px;
 }

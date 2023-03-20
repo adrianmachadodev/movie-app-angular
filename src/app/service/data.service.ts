@@ -13,6 +13,8 @@ export class DataService {
   api_key: string = 'api_key=f921c6f8c3f6b034bb3e7b097ffd8d56';
   tipeMovie: string = 'popular?';
   ratedMovie: string = 'top_rated?';
+  comingMovie: string = 'upcoming?';
+  lastestMovie: string = 'latest?';
 
   constructor(private http: HttpClient) {}
 
@@ -25,6 +27,18 @@ export class DataService {
   getDataApiRated(): Observable<MovieModel[]> {
     return this.http.get<MovieModel[]>(
       `${this.URl}${this.ratedMovie}${this.api_key}`
+    );
+  }
+
+  getDataApiComing(): Observable<MovieModel[]> {
+    return this.http.get<MovieModel[]>(
+      `${this.URl}${this.comingMovie}${this.api_key}`
+    );
+  }
+
+  getDataApiLatest(): Observable<MovieModel[]> {
+    return this.http.get<MovieModel[]>(
+      `${this.URl}${this.lastestMovie}${this.api_key}`
     );
   }
 }

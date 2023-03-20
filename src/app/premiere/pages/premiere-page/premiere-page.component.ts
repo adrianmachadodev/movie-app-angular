@@ -9,5 +9,9 @@ import { DataService } from 'src/app/service/data.service';
 export class PremierePageComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.dataService.getDataApiLatest().subscribe((res: any) => {
+      console.log(res);
+    });
+  }
 }

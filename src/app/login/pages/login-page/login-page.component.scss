@@ -1,15 +1,72 @@
 .wrapper {
   background-color: white;
+  min-height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.divider-logo {
+  background-color: #0a0a0a;
   height: 40rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+
+.logos {
+  background-color: crimson;
+  height: 5rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mylogo {
+  background-color: darkcyan;
+  height: 5rem;
+  width: 50%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-tmdb {
+  background-color: cornflowerblue;
+  height: 5rem;
+  width: 50%;
+}
+
+.title-app {
+  background-color: bisque;
+  height: 10rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.divider-login {
+  // background-color: red;
+  height: 40rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .login-form {
   // background-color: aquamarine;
-  width: 25%;
+  width: 50%;
   height: 25rem;
   border-radius: 4px;
 }

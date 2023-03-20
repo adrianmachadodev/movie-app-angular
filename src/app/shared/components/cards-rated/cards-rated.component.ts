@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SharedService } from '@shared/services/shared.service';
+import { title } from 'process';
 import { MovieModel } from 'src/app/core/models/MovieModel';
 
 @Component({
@@ -18,11 +19,19 @@ export class CardsRatedComponent implements OnInit {
     backdrop_path: '',
   };
 
+  stringTitle: string = '';
+  arrayTitleMovie: Array<string> = [];
+
   constructor(private sharedService: SharedService) {}
 
   ngOnInit(): void {}
 
-  sendDataFavorites(event: string): void {
-    this.sharedService.sendDataMovie$.next(event);
+  // sendDataFavorites(event: string): void {
+  //   this.sharedService.sendDataMovie$.next(event);
+  // }
+
+  saveTitleDataLS(title: any) {
+    this.sharedService.localDataSend$.next(title);
+    this.sharedService.setDataLocalStorage();
   }
 }

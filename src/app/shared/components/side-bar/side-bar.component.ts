@@ -13,19 +13,17 @@ import { DataService } from 'src/app/service/data.service';
 export class SideBarComponent implements OnInit {
   arrayMovies: Array<any> = [];
   stringMovei: string = '';
+  arrayLocal: string[] = [];
 
   constructor(private shared: SharedService, private route: Router) {}
 
   ngOnInit(): void {
-    this.getDataSub();
+    this.getDataLocalService();
     this.route;
   }
 
-  getDataSub(): void {
-    this.shared.sendDataMovie$.subscribe((res: string) => {
-      this.stringMovei = res;
-      this.arrayMovies.push(this.stringMovei);
-      console.log(this.arrayMovies);
-    });
+  getDataLocalService(): void {
+    const data = this.shared.getDataLocalStorage();
+    this.arrayLocal.push(data);
   }
 }

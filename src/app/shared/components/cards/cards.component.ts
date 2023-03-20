@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 import { SharedService } from '@shared/services/shared.service';
 import { SharedModule } from '@shared/shared.module';
 import { MovieModel } from 'src/app/core/models/MovieModel';
@@ -21,7 +22,11 @@ export class CardsComponent implements OnInit {
   };
   imgSrc: string = `http://image.tmdb.org/t/p/w185/`;
 
-  constructor(private shared: SharedService) {}
+  constructor(private shared: SharedService, private route: Router) {}
 
   ngOnInit(): void {}
+
+  idSend(id: number) {
+    this.route.navigate(['movies/' + id]);
+  }
 }

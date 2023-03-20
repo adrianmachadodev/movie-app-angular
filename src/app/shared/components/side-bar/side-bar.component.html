@@ -5,15 +5,15 @@
     <ul>
       <li>
         <i class="uil uil-home" style="color: white; padding: 2px"></i>
-        <a routerLink="Home">Home</a>
+        <a routerLink="home">Home</a>
       </li>
       <li>
         <i class="uil uil-video" style="color: white; padding: 2px"></i>
-        <a routerLink="Premiere">Premiere</a>
+        <a routerLink="premiere">Premiere</a>
       </li>
       <li>
         <i class="uil uil-heart" style="color: white; padding: 2px"></i>
-        <a href="Favorites">Favoritos</a>
+        <a routerLink="favorites">Favoritos</a>
       </li>
       <li>
         <a href="#">Home</a>
@@ -26,11 +26,13 @@
   </div>
   <div class="follow">
     <ul>
-      <li *ngFor="let movie of arrayMovies">
+      <li *ngFor="let movie of arrayLocal">
         {{ movie }}
       </li>
     </ul>
   </div>
   <hr />
-  <div class="log-out">Log-out</div>
+  <div class="log-out">
+    <button>Log Out</button>
+  </div>
 </div>

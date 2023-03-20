@@ -9,6 +9,11 @@ import { MainPageComponent } from './main/pages/main-page/main-page.component';
 import { LoginPageComponent } from './login/pages/login-page/login-page.component';
 import { HomePageComponent } from './home/pages/home-page/home-page.component';
 import { FavoritesPageComponent } from './favorites/pages/favorites-page/favorites-page.component';
+import { MoviePageComponent } from './movies/pages/movie-page/movie-page.component';
+
+//firebase
+
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,8 @@ import { FavoritesPageComponent } from './favorites/pages/favorites-page/favorit
     MainPageComponent,
     LoginPageComponent,
     HomePageComponent,
-    FavoritesPageComponent
+    FavoritesPageComponent,
+    MoviePageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, HttpClientModule],
   providers: [],

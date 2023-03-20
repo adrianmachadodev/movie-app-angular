@@ -1,5 +1,11 @@
 <div class="wrapper">
-  <app-carousel></app-carousel>
+  <ul>
+    <li *ngFor="let one of oneMovie">
+      <app-carousel [movieCarousel]="one"></app-carousel>
+    </li>
+  </ul>
+  <hr />
   <app-section-content [title]="'Top Popular'"></app-section-content>
+  <hr />
   <app-section-rated></app-section-rated>
 </div>
